@@ -1,5 +1,5 @@
 .DS_Store
 data/postgres/*
 .env
-backend/compose/*
+backend/composer/*
 .vscode
