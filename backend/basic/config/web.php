@@ -21,7 +21,7 @@ $config = [
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
-        ],
+        ], 
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
@@ -57,6 +57,18 @@ $config = [
         'modules' => [
             'apiv1' => [
                 'class' => 'app\modules\apiv1\apiv1Module',
+
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'pluralize' => false,
+                    'controller' => ['apiv1/aula',
+                                    'apiv1/carrera',
+                                    'apiv1/horariomateria',
+                                    'apiv1/materia',
+                                    'apiv1/profesor',
+                                    'apiv1/reservaaula',
+                                    ]
+                    ]
             ],       
         ],
 
