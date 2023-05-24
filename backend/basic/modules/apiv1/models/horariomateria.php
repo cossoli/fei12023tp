@@ -2,7 +2,7 @@
 
 namespace app\modules\apiv1\models;
 
-class HorarioMateria extends \app\models\Horariomateria
+class HorarioMateria extends \app\models\horariomateria
 {
     
 }
